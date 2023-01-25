@@ -17,6 +17,7 @@ void error(const char* message) {						//에러 날 시 함수 호출
 void create(ArrayListType* L){							// 배열의 크기 입력하여 동적 메모리 할당, 배열 메모리 크기 정의하늖 ㅏㅁ수
 	printf("배열의 크기를 입력하세요 : "); scanf("%d", &L->size);
 	L -> array = (int *)malloc(L->size * sizeof(int));
+	printf("완료 !\n");
 }
 
 element get_entry(ArrayListType* L, int pos) {			//pos를 받아서 위치가 오류 날 때 쓰는 함수
